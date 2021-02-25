@@ -1,0 +1,46 @@
+{
+  "name": "helm-relase",
+  "version": "0.0.0-development",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "semantic-release": "^17.3.9"
+  },
+  "devDependencies": {
+    "semantic-release": "^17.3.9"
+  },
+  "release": {
+    "branches": [
+      "master",
+      "next"
+    ],
+    "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    ["@semantic-release/github", {
+      "assets": ["*.tgz"]
+      }],
+    ["@semantic-release/exec", {
+      "prepareCmd" : "set-version ${nextRelease.version}",
+      "publishCmd" : "publish-package"
+      }]
+  ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "semantic-release": "semantic-release"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kawanes-spring2020/helm-relase.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kawanes-spring2020/helm-relase/issues"
+  },
+  "homepage": "https://github.com/kawanes-spring2020/helm-relase#readme",
+  "publishConfig": {
+    "access": "restricted"
+  }
+}
