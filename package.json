@@ -29,7 +29,7 @@
       [
         "semantic-release-helm",
         {
-          "path": "./k8s-chart/Chart.yaml"
+          "path": "./k8s-chart"
         }
       ]
     ]
