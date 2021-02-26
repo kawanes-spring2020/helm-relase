@@ -23,6 +23,8 @@
       [
         "@semantic-release/github",
         {
+          "githubUrl": "https://github.com/kawanes-spring2020/helm-relase.git",
+          "githubApiPathPrefix": "/api/v3",
           "assets": [
             "*.tgz"
           ]
