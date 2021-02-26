@@ -28,16 +28,16 @@
         }
       ],
       [
-        "@brpaz/semantic-release-helm",
+        "semantic-release-helm",
         {
-          "chartPath": "./k8s-chart",
-	  "chartRepository": {
-            "branch": "master",
-            "url": "https://kawanes-spring2020.github.io/helm-relase/",
-            "repository": "https://github.com/kawanes-spring2020/helm-relase"
-          }
+          "path": "./k8s-chart",
+	  
         }
-      ]
+      ],
+     ["@semantic-release/exec", {
+      "verifyConditionsCmd": "ls",
+      "publishCmd": "helm package k8s-chart"
+    }]
     ]
   },
   "scripts": {
