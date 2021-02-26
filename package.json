@@ -23,8 +23,6 @@
       [
         "@semantic-release/github",
         {
-          "githubUrl": "https://github.com/",
-          "githubApiPathPrefix": "/api/v3",
           "assets": [
             "*.tgz"
           ]
