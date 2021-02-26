@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@brpaz/semantic-release-helm": "^1.1.0",
     "semantic-release": "^17.3.9",
     "semantic-release-helm": "^1.4.3"
   },
@@ -27,7 +28,7 @@
         }
       ],
       [
-        "semantic-release-helm",
+        "@brpaz/semantic-release-helm",
         {
           "path": "./k8s-chart"
         }
