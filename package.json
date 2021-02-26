@@ -30,7 +30,7 @@
       [
         "@brpaz/semantic-release-helm",
         {
-          "path": "./k8s-chart"
+          "chartPath": "./k8s-chart"
         }
       ]
     ]
